@@ -17,7 +17,7 @@ window.onload = function () {
                 imgs[2].src = "images/colon.jpg";
                 imgs[5].src = "images/colon.jpg";
             }else{
-                imgs[i].src = 'images/'+str[i]+'.jpg';
+                imgs[i].src = 'images/'+str.charAt(i)+'.jpg';
             }
       }
     }
