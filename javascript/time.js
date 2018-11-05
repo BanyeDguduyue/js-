@@ -10,7 +10,7 @@ window.onload = function () {
     }
     function clock(){
         for (var i=0;i<imgs.length;i++){
-            var date= new Date();//获取系统的时间
+            var date= new Date();//获取系统的时间每次都要获取所以要写在循环里面 时间在不停的变化
             var str =toDou(date.getHours())+":"+toDou(date.getMinutes())+":"+toDou(date.getSeconds());//将时间分钟秒变为一个6位的字符串  加两个冒号增加
             imgs[i].src = 'images/'+str[i]+'.jpg';
             if(i==2 || i==5){//防止第三张图片和第6张图片发生变化
